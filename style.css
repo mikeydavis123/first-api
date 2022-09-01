@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(218deg, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+  background-color: hsl(217deg, 19%, 38%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+section .advice {
+  min-height: 200px;
+  width: 400px;
+}
+section h1 {
+  margin: 30px 0 40px 0;
+  color: hsl(150deg, 100%, 66%);
+  font-family: "Manrope";
+}
+section #advice {
+  height: 200px;
+  padding: 20px;
+  font-size: 25px;
+  color: hsl(193deg, 38%, 86%);
+  font-family: "Manrope";
+  display: flex;
+  justify-content: center;
+}
+section .divider {
+  background-image: url("/images/pattern-divider-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 400px;
+}
+section .button {
+  cursor: pointer;
+  position: absolute;
+  top: 360px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(150deg, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .button:hover {
+  background-color: rgb(88, 248, 88);
+}
+
+@media (max-width: 600px) {
+  section {
+    height: 400px;
+    width: 400px;
+  }
+  section .advice {
+    padding: 20px;
+    display: block;
+    min-height: 240px;
+  }
+  section .advice .divider {
+    background-image: url("/images/pattern-divider-mobile.svg");
+  }
+  section .button {
+    top: 370px;
+  }
+}/*# sourceMappingURL=style.css.map */
